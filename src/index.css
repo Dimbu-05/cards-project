@@ -1,0 +1,124 @@
+body {
+  background-color: black;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  margin: 10;
+}
+.parent{
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card{
+  height: 500px;
+  width: 350px;
+  background-color: white;
+  border-radius: 60px;
+  padding: 30px;
+  margin: 10px;
+
+  display: flex;
+  flex-direction: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+  transition: border-color 0.25s ease;
+  cursor: pointer;
+}
+.card:hover {
+  border-color: #90CAF9;
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 0 0 3px rgba(144, 202, 249, 0.4);
+}
+.card .top{
+  display:flex;
+  color: black;
+  align-items:center;
+  justify-content: space-between;
+}
+.center{
+  justify-content: center;
+  margin:8px;
+  padding:10px;
+  background-color: rgba(34, 160, 223, 0.575)  ;
+}
+.center h3{
+  font-size:18px;
+  font-weight:500
+}
+.center h3 span{
+  font-size:9px;
+  font-weight:400; 
+}
+.center .tag{
+  display: flex;
+  gap:5px;
+}
+.center .tag h4{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 12px;
+  background-color: #dadada;
+  border-radius: 5px;
+  padding: 3px 7px;
+}
+.center h2{
+  font-size:20px;
+}
+.top img{
+  height :75px;
+  border-radius: 50%;
+}
+.top button{
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 4px 10px;
+  display:flex;
+  font-weight: 600;
+  align-items: center;
+  font-size:15px;
+  background-color: transparent;
+  color:rgb(0, 0, 0)
+}
+.mid{
+  background-color:rgba(32, 204, 41, 0.685);
+  margin: 10px;
+  padding: 4px;
+  color: black;
+  font-size: 12px;
+  height: 100px;
+  align-items: center;
+  overflow: hidden;
+}
+.bottom{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top:2px solid black;
+  padding-top: 15px;
+  margin: 10px;
+}
+.bottom button{
+  background-color: #111;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: cell;
+}
+.bottom button:hover {
+  background-color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.12);
+}
+.bottom h3{
+  font-size: 15px;
+}
+.bottom p{
+  font-weight: 500;
+  font-size:13px
+}
